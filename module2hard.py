@@ -30,7 +30,7 @@ while True:
     numbers_second = list(numbers_tuple)
     result = ''
 
-    if (n.isdigit() == False) or ((int(n) in check) == False): # Проверка корректности вводимой информации
+    if (n.isdigit() == False) or ((int(n) in check) == False):  # Проверка корректности вводимой информации
         print('Такого не может быть на табличке! Введите другое значение.')
         continue
 
@@ -43,7 +43,7 @@ while True:
                 result += (str(i) + str(j))
     print(f'{n} - {result}',)
 
-    if result == str(check[n]): # Проверка результата
+    if result == str(check[n]):  # Проверка результата
         print('Верно')
     else:
         print('Ошибочный результат!')
